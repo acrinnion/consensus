@@ -19,8 +19,6 @@ function choosemovie(){
   moviesRequest.open('GET', query, true);
   moviesRequest.onload = processmoviesrequest
 
-
-
   // alert("Everything: " + moviesRequest);
   // alert("ready State:   " + moviesRequest.readyState);
   // alert("status:    " + moviesRequest.status);
@@ -144,7 +142,7 @@ function addOption(){
     options.push(document.getElementById(x).value);
     }
     x = x + 1;
-}
+  }
 }
 function choose(){
   addOption();
@@ -152,8 +150,6 @@ function choose(){
   var max = options.push();
   var x = Math.floor(Math.random() * (max - min) ) + min;
   return options[x];
-
-
 }
 
 function disappear(){
