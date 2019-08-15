@@ -8,7 +8,7 @@ function openmovieparampage() {
   document.getElementById("movieparampage").style.display = "block"
 }
 
-
+window.onload = homepageopen;
 
 
 function choosemovie(){
@@ -94,6 +94,7 @@ function openactivparampage(){
   document.getElementById("homepage").innerHTML = "<h2> Activities </h2> <button id = 'free' onclick = 'showChoiceFree()'> Free </button> <button id= 'pay' onclick = 'showChoicePay()'> Pay </pay> </button> <p> <button onclick = 'window.location.reload();'> Back to home </button> </p>";
   document.getElementById("movieparampage").style.display = "none";
 }
+
 function chooseFree(){
   var min = 0;
   var max = free.push();
@@ -162,4 +163,4 @@ function disappear(){
   }
 }
 // define choosebutton function
-window.onload = homepageopen;
+
