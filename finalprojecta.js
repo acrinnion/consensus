@@ -51,7 +51,7 @@ free = ["Go to the park",
 "Make a time capsule"
 ];
 function openactivparampage(){
-  document.getElementById("homepage").innerHTML = "<h2> Activities </h2> <button id = 'free' class='buttonb' onclick = 'showChoiceFree()'> Free </button> <button id= 'pay' class = 'buttonb' onclick = 'showChoicePay()'> Pay </pay> </button> <p> <button class = 'buttonb' onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("homepage").innerHTML = "<h2> Activities </h2> <button id = 'free' class='button' onclick = 'showChoiceFree()'> Free </button> <button id= 'pay' class = 'button' onclick = 'showChoicePay()'> Pay </pay> </button> <p> <button class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 
 }
 function chooseFree(){
@@ -63,7 +63,7 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p><button class = 'buttonb' onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p><button class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 }
 
 function choosePay(){
@@ -75,12 +75,12 @@ function choosePay(){
 
 function showChoicePay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p> <button class = 'buttonb' onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p> <button class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 }
 
 
 function openyouchooseparampage() {
-  document.getElementById("homepage").innerHTML = "<h2 id = 'pageTitle'>Your choices</h2><table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input a choice'> </input><tr><td><input id = '2' type='text'  value='Input a choice'> </input><tr><td><input id = '3' type='text' value='Input a choice'> </input><tr></table><button class = 'buttonb' onclick = 'newID(); addInput()''> + </button><button class = 'buttonb' onclick = 'disappear()'> Find what you should do! </button> <p> <button class='buttonb' onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("homepage").innerHTML = "<h2 id = 'pageTitle'>Your choices</h2><table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input a choice'> </input><tr><td><input id = '2' type='text'  value='Input a choice'> </input><tr><td><input id = '3' type='text' value='Input a choice'> </input><tr></table><button class = 'button' onclick = 'newID(); addInput()''> + </button><button class = 'button' onclick = 'disappear()'> Find what you should do! </button> <p> <button class='button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 }
 
 options = [];
@@ -116,10 +116,10 @@ function choose(){
 function disappear(){
   var choice = choose();
   if (choice == undefined){
-    document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <button class = 'buttonb' onclick = openyouchooseparampage()> Restart </button>"
+    document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <button class = 'button' onclick = openyouchooseparampage()> Restart </button>"
 
   } else{
-    document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p><button class = 'buttonb' onclick = 'window.location.reload();'> Back to home </button> </p>";
+    document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p><button class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 }
 }
 
