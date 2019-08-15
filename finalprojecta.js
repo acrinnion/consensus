@@ -4,7 +4,6 @@ function homepageopen(){
 }
 
 function openmovieparampage() {
-  // document.getElementsByClassName("moviegenrehide").style.display = "none"
   document.getElementById("homepage").style.display = "none"
   document.getElementById("movieparampage").style.display = "block"
 }
@@ -95,7 +94,7 @@ free = ["Go to the park",
 ];
 function openactivparampage(){
   document.getElementById("homepage").innerHTML = "<h2> Activities </h2> <button id = 'free' onclick = 'showChoiceFree()'> Free </button> <button id= 'pay' onclick = 'showChoicePay()'> Pay </pay> </button> <p> <button onclick = 'window.location.reload();'> Back to home </button> </p>";
-
+  document.getElementById("movieparampage").style.display = "none";
 }
 function chooseFree(){
   var min = 0;
@@ -124,6 +123,7 @@ function showChoicePay(){
 
 function openyouchooseparampage() {
   document.getElementById("homepage").innerHTML = "<h2 id = 'pageTitle'>Your choices</h2><table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input a choice'> </input><tr><td><input id = '2' type='text'  value='Input a choice'> </input><tr><td><input id = '3' type='text' value='Input a choice'> </input><tr></table><button onclick = 'newID(); addInput()''> + </button><button onclick = 'disappear()'> Find what you should do! </button> <p> <button onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("movieparampage").style.display = "none";
 }
 
 options = [];
