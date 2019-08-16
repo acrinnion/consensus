@@ -60,6 +60,8 @@ free = ["Go to the park",
 "Make a bucket list",
 "Cut old t-shirts (out of anger or for style)”
 ];
+
+
 function openactivparampage(){
   document.getElementById("homepage").innerHTML = "<h2> Activities </h2> <button id = 'free' class='button' onclick = 'showChoiceFree()'> Free </button> <button id= 'pay' class = 'button' onclick = 'showChoicePay()'> Pay </pay> </button> <p> <button class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 
