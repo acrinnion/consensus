@@ -13,7 +13,8 @@ src="finalproject.js">
     <title>Make a Decision</title>
     <link rel="stylesheet" href="final.css">
     <script type="text/javascript" src="finalprojecta.js"> </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
   </head>
   <body>
     <div id="homepage">
@@ -48,6 +49,16 @@ src="finalproject.js">
       onclick = "openyouchooseparampage()"
       value = "Your Choices">
     </div>
+    <script>
+      $.getJSON("https://api.themoviedb.org/3/discover/movie?api_key=9ffb651d1c825ca7e2d3e8189fba9c11&with_release_type=2|3&region=US", function (cards) {
+           $.each(cards, function (key, val) {
+               $.each(val, function (index, data) {
+                 console.log(data.original_title);
+
+                });
+           });
+      });
+    </script>
   </body>
   <h1>
 </html>
