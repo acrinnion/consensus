@@ -144,15 +144,6 @@ function disappear(){
 }
 }
 
-function homepageopen(){
-  document.getElementById("homepage").style.display = "block";
-  document.getElementById("movieparampage").style.display = "none";
-}
-
-function openmovieparampage() {
-  document.getElementById("homepage").style.display = "none"
-  document.getElementById("movieparampage").style.display = "block"
-}
 
 
-window.onload = homepageopen;
+
