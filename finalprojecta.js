@@ -77,12 +77,7 @@ function choose(){
 
 function disappear(){
   var choice = choose();
-  if (choice == undefined){
-    document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <p> <button> class='button' onclick = openyouchooseparampage()> Restart </button> </p>"
-
-  } else{
-    document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p> <button> class='button' onclick = 'window.location.reload();'> Back to home  </button> </p>";
-  }
+  document.getElementById("homepage").innerHTML = choice
 }
 
 currentmovie = [];
