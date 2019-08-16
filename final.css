@@ -111,3 +111,20 @@ input{
     padding: 10px;
 
 }
+#yctitle{
+  line-height: 2%;
+}
+#plus{
+  background-color: white;
+  border-radius: 6px;
+  padding-left: : 2px;
+}
+.back{
+  color:#05CDB9;
+  text-align:center;
+  font-size: 15px;
+  font-weight: bolder;
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/8974/0_0_solid_FFE5E5_pale_pastel_peach_mirror.png");
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  line-height: 2%;
+}
