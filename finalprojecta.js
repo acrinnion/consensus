@@ -58,7 +58,7 @@ free = ["Go to the park",
 "Cook something new (if you can cook...don’t burn your house down)",
 "Donate clothes",
 "Make a bucket list",
-"Cut old t-shirts (out of anger or for style)”
+"Cut old t-shirts (out of anger or for style)”,
 ];
 
 
