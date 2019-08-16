@@ -83,22 +83,21 @@
 }
 
 .button:hover {
-  background-color: #FFFAFA; /* white */
+  background-color: #C6F9F5; /* light blue*/
   color: black;
 }
 
 
 body {
-  /* background-color:white; */
-  color:#F6F605;
+  color:#05CDB9;
   padding: 40px;
   text-align:center;
-  font-size: 40px;
+  font-size: 55px;
   font-weight: bolder;
-  /* background-image: linear-gradient(gray,silver,white); */
-  background-image: url("https://www.announcementconverters.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/I/L/ILU11C.jpg");
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/8974/0_0_solid_FFE5E5_pale_pastel_peach_mirror.png");
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 table{
   margin: 0px auto;
+}
 }
