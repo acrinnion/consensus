@@ -99,5 +99,15 @@ body {
 }
 table{
   margin: 0px auto;
+  border-collapse: collapse;
+  font-size: 0px;
+
 }
+input{
+    border-radius: 12px;
+    text-align: center;
+    height: 150%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 10px;
+
 }
