@@ -89,7 +89,7 @@ currentmovie = [];
 function choosemovie(){
   cards();
   var min = 0;
-  var max = .currentmovie();
+  var max = currentmovie();
   var x = Math.floor(Math.random() * (max - min) ) + min;
   return currentmovie[x];
 }
