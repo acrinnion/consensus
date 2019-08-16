@@ -155,4 +155,8 @@ function choosemovie(){
   return currentmovie[x];
 }
 
+function disappearmovie(){
+  var choice = choosemovie()
+  document.getElementById("homepage").innerHTML = choice + "<p class='back' onclick = 'window.location.reload();'> Back to home  </p>";
+
 
