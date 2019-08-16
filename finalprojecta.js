@@ -89,7 +89,7 @@ function choosemovie() {
 }
 
 function disappearmovie(){
-  var choice = choosemovie()
+  var choice = choosemovie();
   document.getElementById("homepage").innerHTML = choice;
 }
 
