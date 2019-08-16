@@ -26,28 +26,28 @@ src="finalproject.js">
       class = "button"
       type = "button"
       onclick = "disappearmovie()"
-      value = "Movies">
+      value = "Movies"></input>
 
       <input
       id = "activparam"
       class = "button"
       type = "button"
       onclick = "openactivparampage()"
-      value = "Activities">
+      value = "Activities"></input>
 
       <input
       id = "foodparam"
       class = "button"
       type = "button"
       onclick = "openfoodparampage()"
-      value = "Food">
+      value = "Food"></input>
 
       <input
       id = "youchooseparam"
       class = "button"
       type = "button"
       onclick = "openyouchooseparampage()"
-      value = "Your Choices">
+      value = "Your Choices"></input>
     </div>
     <script>
       $.getJSON("https://api.themoviedb.org/3/discover/movie?api_key=9ffb651d1c825ca7e2d3e8189fba9c11&with_release_type=2|3&region=US", function (cards) {
