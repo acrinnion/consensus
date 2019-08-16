@@ -54,9 +54,9 @@ src="finalproject.js">
            $.each(cards, function (key, val) {
                $.each(val, function (index, data) {
                  console.log(data.original_title)
+                 $("#currentmovie").append([key].original_title);
                 });
            });
-          $("#currentmovie").append(each);
       });
     </script>
   </body>
