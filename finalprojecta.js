@@ -86,8 +86,7 @@ function disappear(){
 }
 
 currentmovie = [];
-function choosemovie(){
-  cards();
+function choosemovie() {
   var min = 0;
   var max = currentmovie.push();
   var x = Math.floor(Math.random() * (max - min) ) + min;
