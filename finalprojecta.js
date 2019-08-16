@@ -103,7 +103,7 @@ function empty(x){
 function fill(x){
   if (x.value == ""){
   x.value = "Input an option"
-}
+  }
 }
 
 options = [];
@@ -111,6 +111,7 @@ idNumber = 3;
 function newID() {
   idNumber = idNumber + 1;
 }
+
 function addInput(){
   var table = document.getElementById("displayTable");
   var newRow = table.insertRow();
@@ -124,7 +125,7 @@ function addOption(){
     options.push(document.getElementById(x).value);
     }
     x = x + 1;
-}
+  }
 }
 function choose(){
   addOption();
@@ -132,8 +133,6 @@ function choose(){
   var max = options.push();
   var x = Math.floor(Math.random() * (max - min) ) + min;
   return options[x];
-
-
 }
 
 function disappear(){
@@ -143,7 +142,7 @@ function disappear(){
 
   } else{
     document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p class='back' onclick = 'window.location.reload();'> Back to home  </p>";
-}
+  }
 }
 
 currentmovie = [];
@@ -158,5 +157,5 @@ function choosemovie(){
 function disappearmovie(){
   var choice = choosemovie()
   document.getElementById("homepage").innerHTML = choice + "<p class='back' onclick = 'window.location.reload();'> Back to home  </p>";
-
+}
 
