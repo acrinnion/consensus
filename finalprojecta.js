@@ -19,7 +19,10 @@ pay = ["Go to the zoo",
 "Plant an herb garden",
 "See a show",
 "Visit an attraction",
-"Homemade ice cream"
+"Homemade ice cream",
+"Get a chia pet",
+"Buy a succulent",
+"Make a zen garden"
 ];
 free = ["Go to the park",
 "Go on a Picnic",
@@ -48,10 +51,18 @@ free = ["Go to the park",
 "Create a photo book",
 "Meditate",
 "Take a power nap",
-"Make a time capsule"
+"Make a time capsule",
+"Watch your favorite movie",
+"Learn a new language",
+"Drink water (you’re probably dehydrated)",
+"Cook something new (if you can cook...don’t burn your house down)",
+"Donate clothes",
+"Make a bucket list",
+"Cut old t-shirts (out of anger or for style)”
 ];
-function openyouchooseparampage() {
-  document.getElementById("homepage").innerHTML = "<h2 id = 'pageTitle'>Your choices</h2> <h4> Input the options you want to choose between </h4> <table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input an option' type='text'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr><td><input id = '2' type='text'  value='Input an option'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr><td><input id = '3' type='text' value='Input an option' onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr></table><button onclick = 'newID(); addInput()''> + </button><button onclick = 'disappear()'> Find what you should do! </button> <p> <button onclick = 'window.location.reload();'> Back to home </button> </p>";
+function openactivparampage(){
+  document.getElementById("homepage").innerHTML = "<h2> Activities </h2> <button id = 'free' class='button' onclick = 'showChoiceFree()'> Free </button> <button id= 'pay' class = 'button' onclick = 'showChoicePay()'> Pay </pay> </button> <p> <button class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
+
 }
 function chooseFree(){
   var min = 0;
