@@ -8,6 +8,7 @@
  webkit-transition-duration: 0.4s; /* Safari */
  transition-duration: 0.4s;
  width : 175px;
+ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #movieparam {
@@ -22,17 +23,7 @@
  width : 175px;
 }
 
-#movieparam {
- background-color: #DBD9D9;
- color: black;
- padding: 15px 32px;
- text-align: center;
- font-size: 16px;
- border-radius: 12px;
- webkit-transition-duration: 0.4s; /* Safari */
- transition-duration: 0.4s;
- width : 175px;
-}
+
 
 #youchooseparam {
  background-color: #DBD9D9;
@@ -139,4 +130,8 @@ input{
   transition-duration: 0.4s;
   width : 175px;
  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#pickbutton:hover {
+  background-color: #C6F9F5; /* light blue*/
+  color: black;
 }
