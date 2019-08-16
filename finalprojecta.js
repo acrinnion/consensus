@@ -89,6 +89,7 @@ function choosemovie() {
 }
 
 function disappearmovie(){
+  alert(currentmovie);
   var choice = choosemovie();
   document.getElementById("homepage").innerHTML = choice;
 }
