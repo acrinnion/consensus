@@ -11,7 +11,7 @@
 }
 
 #movieparam {
- background-color: #F6F605;
+ background-color: #DBD9D9;
  color: black;
  padding: 15px 32px;
  text-align: center;
@@ -23,7 +23,7 @@
 }
 
 #movieparam {
- background-color: #F6F605;
+ background-color: #DBD9D9;
  color: black;
  padding: 15px 32px;
  text-align: center;
@@ -35,7 +35,7 @@
 }
 
 #youchooseparam {
- background-color: #F6F605;
+ background-color: #DBD9D9;
  color: black;
  padding: 15px 32px;
  text-align: center;
@@ -47,7 +47,7 @@
 }
 
 #foodparam {
- background-color: #F6F605;
+ background-color: #DBD9D9;
  color: black;
  padding: 15px 32px;
  text-align: center;
@@ -59,7 +59,7 @@
 }
 
 #activparam {
- background-color: #F6F605;
+ background-color:  #DBD9D9;
  color: black;
  padding: 15px 32px;
  text-align: center;
@@ -71,7 +71,7 @@
 }
 
 #choose {
- background-color: #F6F605;
+ background-color: #DBD9D9;
  color: black;
  padding: 15px 32px;
  text-align: center;
@@ -92,7 +92,7 @@ body {
   color:#05CDB9;
   padding: 40px;
   text-align:center;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bolder;
   background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/8974/0_0_solid_FFE5E5_pale_pastel_peach_mirror.png");
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
