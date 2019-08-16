@@ -15,7 +15,7 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class='back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p> <button> <class='button' onclick = 'window.location.reload();'> Back to home </button></p>";
 }
 
 function choosePay(){
@@ -27,7 +27,7 @@ function choosePay(){
 
 function showChoicePay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p> <button> class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
 }
 
 
@@ -78,10 +78,10 @@ function choose(){
 function disappear(){
   var choice = choose();
   if (choice == undefined){
-    document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <p class='back' onclick = openyouchooseparampage()> Restart </p>"
+    document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <p> <button> class='button' onclick = openyouchooseparampage()> Restart </button> </p>"
 
   } else{
-    document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p class='back' onclick = 'window.location.reload();'> Back to home  </p>";
+    document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p> <button> class='button' onclick = 'window.location.reload();'> Back to home  </button> </p>";
   }
 }
 
@@ -96,6 +96,6 @@ function choosemovie(){
 
 function disappearmovie(){
   var choice = choosemovie()
-  document.getElementById("homepage").innerHTML = choice + "<p class='back' onclick = 'window.location.reload();'> Back to home  </p>";
+  document.getElementById("homepage").innerHTML = choice + "<p> <button> class='button' onclick = 'window.location.reload();'> Back to home  </button></p>";
 }
 
