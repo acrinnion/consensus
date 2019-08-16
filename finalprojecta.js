@@ -15,7 +15,7 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p> <button> <class='button' onclick = 'window.location.reload();'> Back to home </button></p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class='back' onclick = 'window.location.reload();'> Back to home </p>";
 }
 
 function choosePay(){
@@ -27,7 +27,7 @@ function choosePay(){
 
 function showChoicePay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p> <button> class = 'button' onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
 }
 
 
