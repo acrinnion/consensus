@@ -80,7 +80,17 @@ function showChoicePay(){
 
 
 function openyouchooseparampage() {
-  document.getElementById("homepage").innerHTML = "<h2 id = 'pageTitle'>Your choices</h2><table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input a choice'> </input><tr><td><input id = '2' type='text'  value='Input a choice'> </input><tr><td><input id = '3' type='text' value='Input a choice'> </input><tr></table><button class = 'button' onclick = 'newID(); addInput()''> + </button><button class = 'button' onclick = 'disappear()'> Find what you should do! </button> <p> <button class='button' onclick = 'window.location.reload();'> Back to home </button> </p>";
+  document.getElementById("homepage").innerHTML = "<h2 id = 'pageTitle'>Your choices</h2><table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input an option'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr><td><input id = '2' type='text'  value='Input an option'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr><td><input id = '3' type='text' value='Input an option'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr></table><button class = 'button' onclick = 'newID(); addInput()''> + </button><button class = 'button' onclick = 'disappear()'> Find what you should do! </button> <p> <button class='button' onclick = 'window.location.reload();'> Back to home </button> </p>";
+}
+function empty(x){
+  if (x.value == "Input an option"){
+    x.value = ""
+  }
+}
+function fill(x){
+  if (x.value == ""){
+  x.value = "Input an option"
+}
 }
 
 options = [];
@@ -91,7 +101,7 @@ function newID() {
 function addInput(){
   var table = document.getElementById("displayTable");
   var newRow = table.insertRow();
-  newRow.innerHTML = "<td> <input id =".concat(idNumber, " type=text'  value='Input a choice'> </input>"  );
+  newRow.innerHTML = "<td> <input id =".concat(idNumber, " type=text'  value='Input an option'  onmouseover='empty(this)' onmouseout='fill(this)'> </input>"  );
 }
 
 function addOption(){
