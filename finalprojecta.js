@@ -90,6 +90,6 @@ function choosemovie() {
 
 function disappearmovie(){
   var choice = choosemovie()
-  document.getElementById("homepage").innerHTML = choice + "<p> <button> class='button' onclick = 'window.location.reload();'> Back to home  </button></p>";
+  document.getElementById("homepage").innerHTML = choice;
 }
 
