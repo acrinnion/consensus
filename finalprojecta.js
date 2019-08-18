@@ -60,7 +60,7 @@ function addInput(){
 
 function addOption(){
   x = 1;
-  while (x < idNumber){
+  while (x < idNumber + 1){
   if (document.getElementById(x).value != "Input an option"){
     options.push(document.getElementById(x).value);
     }
