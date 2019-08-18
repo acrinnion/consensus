@@ -79,7 +79,7 @@ function disappear(){
   var choice = choose();
   if (choice == undefined){
     document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <p class = 'back' onclick = openyouchooseparampage()> Restart </p>"
-
+    idNumber = 3;
   } else{
     document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home  </p>";
 }
