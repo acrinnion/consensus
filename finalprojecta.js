@@ -89,12 +89,12 @@ var currentmovie = [];
 function choosemovie() {
   var min = 0;
   var max = currentmovie.push();
-  var x = Math.floor(Math.random() * (max - min) ) + min;
-  return currentmovie[x];
+  var t = Math.floor(Math.random() * (max - min) ) + min;
+  return currentmovie[t];
 }
 
 function disappearmovie(){
-  alert(currentmovie);
+  alert(currentmovie[0]);
   var choice = choosemovie();
   document.getElementById("homepage").innerHTML = choice;
 }
