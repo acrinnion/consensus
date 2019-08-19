@@ -28,7 +28,7 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class='back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div>" + choice + "</div><p class='back' onclick = 'window.location.reload();'> Back to home </p>";
 }
 
 function choosePay(){
