@@ -50,16 +50,6 @@ src="finalproject.js">
       value = "Your Choices"></input>
     </div>
     <script>
-      $.getJSON("https://api.themoviedb.org/3/discover/movie?api_key=9ffb651d1c825ca7e2d3e8189fba9c11&with_release_type=2|3&region=US", function (cards) {
-            $.each(cards, function (key, val) {
-               $.each(val, function (index, data) {
-                 console.log(data.original_title)
-                 currentmovie.push(data.original_title[key, val]);
-                });
-           });
-      });
-    </script>
-    <script>
       var currentmovie = [];
       function choosemovie() {
         var min = 0;
@@ -75,6 +65,17 @@ src="finalproject.js">
       }
 
     </script>
+    <script>
+      $.getJSON("https://api.themoviedb.org/3/discover/movie?api_key=9ffb651d1c825ca7e2d3e8189fba9c11&with_release_type=2|3&region=US", function (cards) {
+            $.each(cards, function (key, val) {
+               $.each(val, function (index, data) {
+                 console.log(data.original_title)
+                 currentmovie.push(data.original_title[key, val]);
+                });
+           });
+      });
+    </script>
+
   </body>
   <h1>
 </html>
