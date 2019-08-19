@@ -64,7 +64,7 @@ function addOption(){
   if (document.getElementById(x).value != "Input an option"){
     options.push(document.getElementById(x).value);
     }
-    x = x + 1;
+  x = x + 1;
   }
 }
 function choose(){
