@@ -11,7 +11,7 @@ function chooseFood(){
 }
 function openfoodparampage(){
   var choice = chooseFood();
-  document.getElementById("homepage").innerHTML = "<h2> You should get </h2>" + choice + " <p class='back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You should get/go to </h2>" + choice + " <p class='back' onclick = 'window.location.reload();'> Back to home </p>";
 
 }
 
