@@ -28,7 +28,12 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div>" + choice + "</div><p class='back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div>" + choice + "</div><p class='back' onclick = 'window.location.reload();'> Back to home </p><p class='back' onclick = 'newactivfree();'> New Free Activity </p>";
+}
+
+function newactivfree(){
+  var choice = chooseFree();
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div>" + choice + "</div><p class='back' onclick = 'window.location.reload();'> Back to home </p><p class='back' onclick = 'newactivfree();'> New Free Activity </p>";
 }
 
 function choosePay(){
@@ -40,9 +45,13 @@ function choosePay(){
 
 function showChoicePay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
 }
 
+function newactivpay(){
+  var choice = choosePay();
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
+}
 
 function openyouchooseparampage() {
   document.getElementById("homepage").innerHTML = "<div id = 'yctitle'> <h4 id = 'pageTitle'>Your choices</h4> <h6> Input the options you want to choose between </h6>  <table id = 'displayTable'><tr><td>   <input id = '1' type='text'  value='Input an option' type='text'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr><td><input id = '2' type='text'  value='Input an option'  onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr><td><input id = '3' type='text' value='Input an option' onmouseover='empty(this)' onmouseout='fill(this)'> </input><tr></table><button id='plus' onclick = 'newID(); addInput()''> + </button>  <p> <button id = 'pickbutton' onclick = 'disappear()'> Find what to do! </button> <p class = 'back' onclick = 'window.location.reload();'> Back to home </p> </p></div>";
