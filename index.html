@@ -65,7 +65,7 @@ src="finalproject.js">
 
       function disappearmovie(){
         var choice = choosemovie();
-        document.getElementById("homepage").innerHTML = "<h2>You Should Watch</h2><div>" + choice + "</div> <img src='https://www.themoviedb.org/assets/2/v4/logos/208x226-stacked-green-9484383bd9853615c113f020def5cbe27f6d08a84ff834f41371f223ebad4a3c.png' alt ='The Movie Database Logo' class ='pics' style='width:125px;height:150px;'> <div><p class = 'back'>This product uses the TMDb API but is not endorsed or certified by TMDb.</p></div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
+        document.getElementById("homepage").innerHTML = "<h2>You Should Watch</h2><div>" + choice + "</div> <img src='https://www.themoviedb.org/assets/2/v4/logos/208x226-stacked-green-9484383bd9853615c113f020def5cbe27f6d08a84ff834f41371f223ebad4a3c.png' alt ='The Movie Database Logo' class ='pics' style='width:100px;height:100px;'> <div><p class = 'back'>This product uses the TMDb API but is not endorsed or certified by TMDb.</p></div><div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p></div>";
       }
 
       $.getJSON("https://api.themoviedb.org/3/movie/now_playing?api_key=9ffb651d1c825ca7e2d3e8189fba9c11&language=en-US&page=1", function (cards) {
