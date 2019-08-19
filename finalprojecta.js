@@ -85,7 +85,7 @@ function disappear(){
 }
 }
 
-currentmovie = [];
+var currentmovie = [];
 function choosemovie() {
   var min = 0;
   var max = currentmovie.push();
