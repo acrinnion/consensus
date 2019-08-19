@@ -60,7 +60,7 @@ src="finalproject.js">
 
       function disappearmovie(){
         var choice = choosemovie();
-        document.getElementById("homepage").innerHTML = choice;
+        document.getElementById("homepage").innerHTML = "You Should Watch..." + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
       }
 
       $.getJSON("https://api.themoviedb.org/3/movie/now_playing?api_key=9ffb651d1c825ca7e2d3e8189fba9c11&language=en-US&page=1", function (cards) {
