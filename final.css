@@ -78,6 +78,10 @@
   color: black;
 }
 
+.button:hover {
+  background-color: #C6F9F5; /* light blue*/
+  color: black;
+}
 
 body {
   color:#05CDB9;
@@ -111,7 +115,7 @@ input{
   padding-left: : 2px;
 }
 .back{
-  color:#05CDB9;
+  color:#BAB4B4;
   text-align:center;
   font-size: 15px;
   font-weight: bolder;
