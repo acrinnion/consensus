@@ -139,3 +139,7 @@ input{
   background-color: #C6F9F5; /* light blue*/
   color: black;
 }
+
+#homedescrip {
+ font-style: italic;
+}
