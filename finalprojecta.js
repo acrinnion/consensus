@@ -85,17 +85,17 @@ function disappear(){
 }
 }
 
-var currentmovie = [];
-function choosemovie() {
-  var min = 0;
-  var max = currentmovie.push();
-  var t = Math.floor(Math.random() * (max - min) ) + min;
-  return currentmovie[t];
-}
+// var currentmovie = [];
+// function choosemovie() {
+//   var min = 0;
+//   var max = currentmovie.push();
+//   var t = Math.floor(Math.random() * (max - min) ) + min;
+//   return currentmovie[t];
+// }
 
-function disappearmovie(){
-  alert(currentmovie[0]);
-  var choice = choosemovie();
-  document.getElementById("homepage").innerHTML = choice;
-}
+// function disappearmovie(){
+//   alert(currentmovie[0]);
+//   var choice = choosemovie();
+//   document.getElementById("homepage").innerHTML = choice;
+// }
 
