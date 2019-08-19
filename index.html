@@ -55,7 +55,12 @@ src="finalproject.js">
         var min = 0;
         var max = currentmovie.push();
         var t = Math.floor(Math.random() * (max - min - 1)) + min;
-        return currentmovie[t];
+        if (t == 0) {
+          return currentmovie[t];
+        } else {
+          t = t - 1
+          return currentmovie[t];
+        }
       }
 
       function disappearmovie(){
