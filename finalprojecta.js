@@ -28,12 +28,12 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<div class='youShould'> <h2> You Should... </h2><div class='choice'>" + choice + "</div><br><p class='newChoice' onclick = 'newactivfree();'> Retry </p><p class='back' onclick = 'window.location.reload();'> Back to home </p></div>";
+  document.getElementById("homepage").innerHTML = "<div class='youShould'> <h2> You Should... </h2><div class='choice'>" + choice + "</div><br><p class='newChoice' onclick = 'newactivfree();'> New Activity </p><p class='back' onclick = 'window.location.reload();'> Back to home </p></div>";
 }
 
 function newactivfree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<div class='youShould'><h2> You Should... </h2><div class='choice'>" + choice + "</div><br><p class='newChoice' onclick = 'newactivfree();'> Retry </p><p class='back' onclick = 'window.location.reload();'> Back to home </p></div>";
+  document.getElementById("homepage").innerHTML = "<div class='youShould'><h2> You Should... </h2><div class='choice'>" + choice + "</div><br><p class='newChoice' onclick = 'newactivfree();'> New Activity </p><p class='back' onclick = 'window.location.reload();'> Back to home </p></div>";
 }
 
 function choosePay(){
