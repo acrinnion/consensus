@@ -11,7 +11,7 @@ function chooseFood(){
 }
 function openfoodparampage(){
   var choice = chooseFood();
-  document.getElementById("homepage").innerHTML = "<h2> You should get/go to </h2><div class='choice'>" + choice + "</div> <p class='back' onclick = 'window.location.reload();'> Back to home </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You should get/go to </h2><div class='choice'>" + choice + " </div><p class='back' onclick = 'window.location.reload();'> Back to home </p>";
 
 }
 
@@ -28,12 +28,12 @@ function chooseFree(){
 
 function showChoiceFree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class='choice'>" + choice + "</div><p class='back' onclick = 'window.location.reload();'> Back to home </p><p class='back' onclick = 'newactivfree();'> New Free Activity </p>";
+  document.getElementById("homepage").innerHTML = "<div class='youShould'> <h2> You Should... </h2><div class='choice'>" + choice + "</div><br><p class='newChoice' onclick = 'newactivfree();'> Retry </p><p class='back' onclick = 'window.location.reload();'> Back to home </p></div>";
 }
 
 function newactivfree(){
   var choice = chooseFree();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class='choice'>" + choice + "</div><p class='back' onclick = 'window.location.reload();'> Back to home </p><p class='back' onclick = 'newactivfree();'> New Free Activity </p>";
+  document.getElementById("homepage").innerHTML = "<div class='youShould'><h2> You Should... </h2><div class='choice'>" + choice + "</div><br><p class='newChoice' onclick = 'newactivfree();'> Retry </p><p class='back' onclick = 'window.location.reload();'> Back to home </p></div>";
 }
 
 function choosePay(){
@@ -45,12 +45,12 @@ function choosePay(){
 
 function showChoicePay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class ='choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2> <div class='choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
 }
 
 function newactivpay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class='choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class = 'choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
 }
 
 function openyouchooseparampage() {
@@ -103,7 +103,7 @@ function disappear(){
     document.getElementById("homepage").innerHTML = "<h2> Please input your options </h2> <p class = 'back' onclick = openyouchooseparampage()> Restart </p>"
     idNumber = 3;
   } else{
-    document.getElementById("homepage").innerHTML = "<h2> You should... </h2>" + choice + "<p class = 'back' onclick = 'window.location.reload();'> Back to home  </p>";
+    document.getElementById("homepage").innerHTML = "<h2> You should... </h2> <div class='choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home  </p>";
 }
 }
 
