@@ -45,12 +45,12 @@ function choosePay(){
 
 function showChoicePay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2> <div class='choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2> <div class='choice'>" + choice + "</div><p class = 'newChoice' onclick = 'newactivpay();'> New Activity </p><p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
 }
 
 function newactivpay(){
   var choice = choosePay();
-  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class = 'choice'>" + choice + "</div><p class = 'back' onclick = 'window.location.reload();'> Back to home </p><p class = 'back' onclick = 'newactivpay();'> New Paying Activity </p>";
+  document.getElementById("homepage").innerHTML = "<h2> You Should... </h2><div class = 'choice'>" + choice + "</div><p class = 'newChoice' onclick = 'newactivpay();'> New Activity </p><p class = 'back' onclick = 'window.location.reload();'> Back to home </p>";
 }
 
 function openyouchooseparampage() {
