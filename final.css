@@ -136,6 +136,7 @@ body {
   font-weight: bolder;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH48FT_jGsxpN3qgBfHet_XSCrgsDp5igpF0PXOP15hcsEj4EqTQ");
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-shadow: 1.5px 1.5px white;
 }
 table{
   margin: 0px auto;
@@ -167,6 +168,7 @@ input{
   background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/8974/0_0_solid_FFE5E5_pale_pastel_peach_mirror.png");
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   line-height: 25%;
+ text-shadow: none;
 }
 
 #sued{
@@ -208,11 +210,12 @@ input{
 .newChoice{
 
   text-align:center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bolder;
   background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0308/8974/0_0_solid_FFE5E5_pale_pastel_peach_mirror.png");
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   line-height: 25%;
+ text-shadow: none;
 
 
 }
