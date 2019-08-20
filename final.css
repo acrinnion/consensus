@@ -12,6 +12,20 @@
 
 }
 
+.button1 {
+ background-color:#DBD9D9;
+ color: black;
+ padding: 15px 32px;
+ text-align: center;
+ font-size: 16px;
+ border-radius: 12px;
+ webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+ width : 175px;
+ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ text-align: center;
+}
+
 #movieparam {
  background-color: #DBD9D9;
  color: black;
@@ -98,6 +112,17 @@
 }
 
 .button:hover {
+  background-color: #C6F9F5; /* light blue*/
+  color: black;
+}
+
+
+.button1:hover {
+  background-color: #C6F9F5; /* light blue*/
+  color: black;
+}
+
+.button1:hover {
   background-color: #C6F9F5; /* light blue*/
   color: black;
 }
